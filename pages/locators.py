@@ -13,3 +13,6 @@ class LoginPageLocators:
     REGISTER_PASSWORD_REPEAT = (By.NAME, "registration-password2")
 
 
+class ProductPageLocators:
+    ADD_TO_BASKET_BUTTON = (By.CLASS_NAME, "btn-add-to-basket")
+    PRODUCT_PAGE_ARTICLE = (By.CSS_SELECTOR, "article.product_page")

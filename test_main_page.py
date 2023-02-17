@@ -6,6 +6,8 @@ from selenium.webdriver.common.by import By
 def go_to_login_page(browser):
     login_link = browser.find_element(By.CSS_SELECTOR, "#login_link")
     login_link.click()
+    # alert = self.browser.switch_to.alert
+    # alert.accept()
 
 
 def test_guest_can_go_to_login_page(browser):
