@@ -19,6 +19,13 @@ class ProductPage(BasePage):
         assert self.is_element_present(*ProductPageLocators.PRODUCT_PAGE_ARTICLE), "Product page article is " \
                                                                                    "missing "
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but " \
+                                                                                  "should be missing "
+
+    def should_disappear_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is not disappeared"
+
     def should_be_title_in_message(self):
         assert self.is_element_present(*ProductPageLocators.BOOK_TITLE_IN_MESSAGE), "No title in message"
 
